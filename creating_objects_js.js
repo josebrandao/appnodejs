@@ -1,5 +1,5 @@
 //Este é um exemplo de declaração de classe javascript
-function book(title,pages,isbn){//{1}}
+function Book(title,pages,isbn){//{1}}
   this.title = title;
   this.pages = page;
   this.isbn = isbn;
@@ -8,3 +8,6 @@ function book(title,pages,isbn){//{1}}
 Book.prototype.printTitle = function(){
     console.log(this.title)
 }
+//De maneira + direta treinando a criação de classe e objetos
+function Carro(){}
+ var carro1 = new Carro();
