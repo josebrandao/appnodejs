@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://jwpsrv.com/library/CqNIfIdKEeK1ZCIACp8kUw.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="streamsense.min.js"></script>
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7826894-16']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+        <!-- Google Analytics --> <!-- Scripts -->
+
+</head>
+<body>
+  <!-- Begin comScore DAx STANDARD-->
+<script type="text/javascript">
+// <![CDATA[
+function udm_(a){var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));a+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer),a[h]>i&&a[f](l)>0&&(j=a[g](0,i-8).lastIndexOf(l),a=(a[g](0,j)+k+"cut="+r(a[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=a):c.write("<","p","><",'img src="',a,'" height="1" width="1" alt="*"',"><","/p",">")}
+udm_('http'+(document.location.href.charAt(4)=='s'?'s://sb':'://b')+'.scorecardresearch.com/p?c1=2&xxxxxxxxx&ns_site=metro951&name=mediaplayer');
+// ]]>
+</script>
+<noscript><p><img src="http://b.scorecardresearch.com/p?c1=2&amp;xxxxxxxxx&amp;c3=metro&amp;c6=radio&amp;ns_site=metro951&name=mediaplayer" height="1" width="1" alt="*"></p></noscript>
+<!-- End comScore DAx STANDARD -->
+HLS
+<br><br>
+<div id='playerBbfKWvKP5PYv1'></div>
+    <script type='text/javascript'>
+     //var VideoLength = 0;
+    // Measurement object before the player but keep in mind player is not set yet
+    var streamSense = new ns_.StreamSense({}, 'http://b.scorecardresearch.com/p?c1=2&xxxxxxxxx&c3=metro&c6=radio&ns_site=metro951');
+    var clips = [];
+    clips[1] = {
+        ns_st_ci: "Your internal Id here", // Internal Content ID
+        ns_st_pr: "Programacion Online Metro", // Program Name
+        ns_st_pl: "Metro951 Radio Online", // Playlist title
+        //ns_st_cl: 0,
+        ns_st_ep: "Metro951", // Episode Title
+        ns_st_ge: "Radio Online", // Content Genre Description
+        ns_st_ty: "live streaming", // Stream Type
+        //ns_st_po: 0
+
+    }
+    streamSense.setClip(clips[1]);
+    // From here down jwplayer() is not the player is the factory to create players so lets create a player
+    var myJwPlayer = jwplayer('playerBbfKWvKP5PYv1').setup({
+        file: 'http://metroaudio1.hls.avstreaming.net/metroAudio1/ngrp:audio1_all/playlist.m3u8',
+        title: '#Player Metro951',
+        width: '100%',
+        height:'30',
+        skin: 'bekle',
+        ga: '{}'
+    });
+    // Now that we got a player we can use it to access the several status methods and events
+    // We are gonna use state handlers the player already has available
+    myJwPlayer.onPlay(function () {
+        //VideoLength = myJwPlayer.getDuration() * 1000;
+        //Predefined labels
+        streamSense.setLabels({
+            ns_st_mp: "jwPlayer",
+            ns_st_mv: jwplayer.version,
+            name: "metro.online",
+            c3: "metro",
+            c6: "radio"
+        });
+        streamSense.getClip().setLabel("ns_st_cl", 0);
+        streamSense.notify(ns_.StreamSense.PlayerEvents.PLAY, {}, myJwPlayer.getPosition() * 1000);
+    });
+    myJwPlayer.onPause(function () {
+        streamSense.notify(ns_.StreamSense.PlayerEvents.PAUSED, {}, myJwPlayer.getPosition() * 1000);
+    });
+    //myJwPlayer.onBuffer(function () {
+       // streamSense.notify(ns_.StreamSense.PlayerEvents.BUFFER, {}, myJwPlayer.getPosition() * 1000);
+    //});
+   // myJwPlayer.onComplete(function () {
+       // streamSense.notify(ns_.StreamSense.PlayerEvents.END, {}, myJwPlayer.getPosition() * 1000);
+    //});
+    </script>
+ <br><br>
+</body>
+</html>
