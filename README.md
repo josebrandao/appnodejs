@@ -15,4 +15,10 @@ Este código de teste mostra como uma classe javaScript deve e pode ser implemen
 Criando classe e instanciando um objeto javaScript de forma bem direta.
 <h3>vtex_ecommerce_tagging.js</h3>
 Esta tag javaScript foi escrita para solucionar um problema na medição webAnalytics de um cliente, observem, no código que para resolver a questão de como escrever os nomes dos passos de forma correta fiz uso do recurso das expressões regulares na validação, pretendo reescrever este código utilizando melhores práticas, colocando os conceitos de OOP em prática e adotando um dos modelos de design pattern que mais possa se adequar ao problema.
-
+<h3><align='left'><ul type='square'>
+  <li>radio_tracking_code.html</li>
+  <li>switch-case.js</li>
+  <li>video_tagging.js</li>
+  </ul>
+ </p> </h3>
+ Estes códigos foram criados para solucionarem problemas de medições de vídeo e rádio (webAnalytics).
