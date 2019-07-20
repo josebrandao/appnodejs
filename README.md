@@ -11,4 +11,6 @@ Implementei o código para colocar em prática a criação de um grafo, cuja, l�
 
 <h3>_class_book_js.js</h3>
 Este código de teste mostra como uma classe javaScript deve e pode ser implementada e diferente das linguagens OOP padrões como: JAVA, C# etc.
+<h3>_objects_carro_js.js</h3>
+Criando classe e instanciando um objeto javaScript de forma bem direta.
 
