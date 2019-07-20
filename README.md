@@ -13,4 +13,6 @@ Implementei o código para colocar em prática a criação de um grafo, cuja, l�
 Este código de teste mostra como uma classe javaScript deve e pode ser implementada e diferente das linguagens OOP padrões como: JAVA, C# etc.
 <h3>_objects_carro_js.js</h3>
 Criando classe e instanciando um objeto javaScript de forma bem direta.
+<h3>vtex_ecommerce_tagging.js</h3>
+Esta tag javaScript foi escrita para solucionar um problema na medição webAnalytics de um cliente, observem, no código que para resolver a questão de como escrever os nomes dos passos de forma correta fiz uso do recurso das expressões regulares na validação, pretendo reescrever este código utilizando melhores práticas, colocando os conceitos de OOP em prática e adotando um dos modelos de design pattern que mais possa se adequar ao problema.
 
