@@ -21,4 +21,4 @@ Esta tag javaScript foi escrita para solucionar um problema na medição webAnal
   <li>video_tagging.js</li>
   </ul>
  </p> </h3>
- Estes códigos foram criados para solucionarem problemas de medições de vídeo e rádio (webAnalytics).
+ Estes códigos foram criados para solucionar problemas de medições de vídeo e rádio (webAnalytics).
