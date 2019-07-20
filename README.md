@@ -9,3 +9,6 @@ o servidor local: http://localhost:8080
 <h3> _graph01_.js </h3>
 Implementei o código para colocar em prática a criação de um grafo, cuja, lógica e conceito é importantissíma na computação.
 
+<h3>_class_book_js.js</h3>
+Este código de teste mostra como uma classe javaScript deve e pode ser implementada e diferente das linguagens OOP padrões como: JAVA, C# etc.
+
