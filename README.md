@@ -1,24 +1,68 @@
+# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 
-<h2>Testes de códigos javaScript utilizando nodeJs como servidor</h2>
-Efetuei o download do nodeJs no site: 
-<b>https://nodejs.org/en/download/</b>
-<p align='justify'>Uma vez instalado o nodeJs utilizei a seguinte linha de comando no CMD:</p>
-<p align='left'style='italic'>npm install http-server</p>
-Basta digita no CMD o diretório onde você está efetuando os testes nos código digitando a linha de comando no cmd: http-server e em seguida abrir
-o servidor local: http://localhost:8080
-<h3> _graph01_.js </h3>
-Implementei o código para colocar em prática a criação de um grafo, cuja, lógica e conceito é importantissíma na computação.
+[Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
-<h3>_class_book_js.js</h3>
-Este código de teste mostra como uma classe javaScript deve e pode ser implementada e diferente das linguagens OOP padrões como: JAVA, C# etc.
-<h3>_objects_carro_js.js</h3>
-Criando classe e instanciando um objeto javaScript de forma bem direta.
-<h3>vtex_ecommerce_tagging.js</h3>
-Esta tag javaScript foi escrita para solucionar um problema na medição webAnalytics de um cliente, observem, no código que para resolver a questão de como escrever os nomes dos passos de forma correta fiz uso do recurso das expressões regulares na validação, pretendo reescrever este código utilizando melhores práticas, colocando os conceitos de OOP em prática e adotando um dos modelos de design pattern que mais possa se adequar ao problema.
-<h3><align='left'><ul type='square'>
-  <li>radio_tracking_code.html</li>
-  <li>switch-case.js</li>
-  <li>video_tagging.js</li>
-  </ul>
- </p> </h3>
- Estes códigos foram criados para solucionar problemas de medições de vídeo e rádio (webAnalytics).
+## Preview
+
+[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
+
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
+
+## Status
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-resume/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-resume.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-resume)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume?type=dev)
+
+## Download and Installation
+
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/resume/)
+* Install via npm: `npm i startbootstrap-resume`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-resume.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-resume)
+
+## Usage
+
+### Basic Usage
+
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+
+### Advanced Usage
+
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+
+#### Gulp Tasks
+
+- `gulp` the default task that builds everything
+- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
+
+You must have npm installed globally in order to use this build environment.
+
+## Bugs and Issues
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-resume/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/resume/).
+
+## About
+
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
+
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
