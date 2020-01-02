@@ -1,9 +1,0 @@
-name = document.querySelector("ul").textContent
-resultado = name.split("      ");
-var eArr = resultado.values();
-for (let letter of eArr) {
-  console.log(letter);
-}
-var slh_l = /S/
-
-xn=xn.replace(slh_l, "\n")
